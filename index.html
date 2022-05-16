@@ -355,72 +355,6 @@
           }
       }
    </script>
-   <script>
-      ( function() {
-      
-        var youtube = document.querySelectorAll( ".lazy-youtube" );
-        
-        for (var i = 0; i < youtube.length; i++) {
-          
-          var source = "assets/img/"+ youtube[i].dataset.embed +".webp";
-            
-          var image = new Image();
-              image.src = source;
-              image.addEventListener( "load", function() {
-                youtube[ i ].appendChild( image );
-              }( i ) );
-          
-              youtube[i].addEventListener( "click", function() {
-      
-                var iframe = document.createElement( "iframe" );
-      
-                    iframe.setAttribute( "allow", "autoplay" );
-                    iframe.setAttribute( "frameborder", "0" );
-                    iframe.setAttribute( "allowfullscreen", "" );
-                    iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1&controls=0" );
-      
-                    this.innerHTML = "";
-                    this.appendChild( iframe );
-              } );	
-        };
-        
-      } )();
-   </script>
-   <script>
-      document.addEventListener("contextmenu", function (e){
-          e.preventDefault();
-      }, false);
-      </script>
-      
-      <script>
-      document.onkeypress = function (event) {
-      event = (event || window.event);
-      if (event.keyCode == 123) {return false;}
-      if (event.keyCode == 93) {return false;}
-      if (event.keyCode == 85) {return false;}
-      if (event.keyCode == 80) {return false;}
-      if (event.keyCode == 44) {return false;}
-      if (event.keyCode == 73) {return false;}
-      }
-      document.onmousedown = function (event) {
-      event = (event || window.event);
-      if (event.keyCode == 123) {return false;}
-      if (event.keyCode == 93) {return false;}
-      if (event.keyCode == 85) {return false;}
-      if (event.keyCode == 80) {return false;}
-      if (event.keyCode == 44) {return false;}
-      if (event.keyCode == 73) {return false;}
-      }
-      document.onkeydown = function (event) {
-      event = (event || window.event);
-      if (event.keyCode == 123) {return false;}
-      if (event.keyCode == 93) {return false;}
-      if (event.keyCode == 85) {return false;}
-      if (event.keyCode == 80) {return false;}
-      if (event.keyCode == 44) {return false;}
-      if (event.keyCode == 73) {return false;}
-      }
-      </script>
       <!-- data de hoje <div id="descounttime"></div> -->
       <script language="javascript">
       var getdayNames = new Array("domingo", "segunda-Feira", "terça-feira", "quarta-feira","quinta-feira", "sexta-feira", "sábado");
@@ -433,12 +367,12 @@
    </body>
    <footer class="py-4">
       <div class="px-lg-7 px-sm-3" style="padding-bottom:12cm"></div>
-         <div class="px-lg-7 px-sm-3" style="color:#9f9f9f;font-size:12px">
+         <div class="px-lg-7 px-sm-3" style="color:#7a7a7a;font-size:12px">
          <p class="center" style="color:#808080;font-size:14px;padding-bottom:5px;">Copyright © 2019-2022 Tecnomilionaria®<br>Todos os direitos reservados.</p>
          <p class="center"><a href="termos-de-uso.html">Termos de Uso </a>| <a href="politicas-de-privacidade.html">Política de Privacidade </a></p>
          <p class="center">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.</p>
          <p class="center">*Resultados podem variar de pessoa para pessoa.</p>
-         <p class="center">Se você tiver alguma dúvida, sinta-se à vontade para usar o e-mail de contato e falar conosco em horário comercial de Segunda a Sextas das 09h00 às 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</p>
+         <p class="center">Se você tiver alguma dúvida, sinta-se à vontade para usar o e-mail de contato e falar conosco em horário comercial de segunda-feira a sexta-feira das 09h00 às 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</p>
          <p class="center">CNPJ: 07.270.606/0001-96 - contato@tecnomilionaria.fun</p>
       </div>
    </footer>
